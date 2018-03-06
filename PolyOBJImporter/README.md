@@ -2,7 +2,9 @@
 As long as this script and Surface shader exist within your Unity project assets, you should be able to import any Blocks model from Google Poly.
 
 ## Installation (Option 1)
-Download the 
+1. Download the "PolyObjImporter.unitypackage" file and "import custom package" into Unity.
+You may move the both the script and surface shader files to whichever asset folder you like,
+they do not need to remain together.
 
 ## Installation (Option 2)
 1. Create a C# script named "PolyObjImporter" in any asset folder you want and copy the code from "PolyObjImporter.cs" into it.
