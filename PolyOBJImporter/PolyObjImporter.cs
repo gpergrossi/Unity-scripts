@@ -11,10 +11,37 @@ using UnityEngine;
  * importing of any file with the given file extenson. In this case ".polyobj"
  */
 [ScriptedImporter(1, "polyobj")]
+
+/**
+ * Poly Object Importer for Unity
+ *
+ *   Copyright 2018 Gregary Pergrossi
+ *
+ *   Licensed under the Apache License, Version 2.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *   Unless required by applicable law or agreed to in writing, software
+ *   distributed under the License is distributed on an "AS IS" BASIS,
+ *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *   See the License for the specific language governing permissions and
+ *   limitations under the License.
+ *
+ * This script will allow you to import an OBJ file downloaded from
+ * a Google Poly Blocks creation. It differes from the standard Unity
+ * OBJ importer by importing the entire model as a single mesh with
+ * vertex colors. You must rename the ".obj" file to have an extension
+ * of ".polyobj" for Unity to make use of this script. When importing
+ * the asset, you must also import the ".mtl" file it references (if present).
+ */
 public class PolyObjImporter : ScriptedImporter {
 
 	[SerializeField]
 	public Boolean m_GenerateTexCoords = false;
+
+	private static Shader shader = Shader.Find("Custom/VertexColors");
 
 	/**
 	 * This method is called by Unity when a file with the 
@@ -48,7 +75,6 @@ public class PolyObjImporter : ScriptedImporter {
 
 		// Create a material asset and add it to the GameObject
 		var meshRenderer = main.AddComponent<MeshRenderer>();
-		var shader = Shader.Find("Custom/VertexColors");
 		var material = new Material(shader);
 		ctx.AddObjectToAsset(material.name, material);
 		meshRenderer.material = material;
