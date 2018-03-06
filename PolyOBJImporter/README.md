@@ -3,8 +3,8 @@ As long as this script and Surface shader exist within your Unity project assets
 
 ## Installation (Option 1)
 1. Download the "PolyObjImporter.unitypackage" file and "import custom package" into Unity.<br/>
-You may move the both the script and surface shader files to whichever asset folder you like,
-they do not need to remain together.
+_You may move the both the script and surface shader files to whichever asset folder you like,
+they do not need to remain together._
 
 ## Installation (Option 2)
 1. Create a C# script named "PolyObjImporter" in any asset folder you want and copy the code from "PolyObjImporter.cs" into it.
