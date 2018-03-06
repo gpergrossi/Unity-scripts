@@ -1,10 +1,12 @@
 # Poly Object Importer
 As long as this script and Surface shader exist within your Unity project assets, you should be able to import any Blocks model from Google Poly.
 
-## Installation
+## Installation (Option 1)
+Download the 
+
+## Installation (Option 2)
 1. Create a C# script named "PolyObjImporter" in any asset folder you want and copy the code from "PolyObjImporter.cs" into it.
 2. Create a Surface shader named "VertexColors" anywhere you like and copy the code from "VertexColors.shader" into it.
-3. The license for each file is included in the file's source code.
 
 ## Usage
 1. Download a blocks model .obj from Google Poly.
