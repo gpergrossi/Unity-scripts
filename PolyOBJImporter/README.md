@@ -14,7 +14,7 @@ they do not need to remain together.
 1. Download a blocks model .obj from Google Poly.
 2. Unzip the zip file
 3. Rename the .obj file to a .polyobj extension (this is necessary for Unity to use the script)
-4. Open Unity and "import new asset" in whichever asset folder you like:
+4. Open Unity and "import new asset" in whichever asset folder you like.<br/>
    **_Make sure to import both the ".polyobj" and ".mtl" file_**
 
 If Unity ever needs to re-import this asset, it will look for the .mtl file in the same folder.
