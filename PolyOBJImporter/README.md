@@ -4,7 +4,7 @@ As long as this script and Surface shader exist within your Unity project assets
 ## Installation
 1. Create a C# script named "PolyObjImporter" in any asset folder you want and copy the code from "PolyObjImporter.cs" into it.
 2. Create a Surface shader named "VertexColors" anywhere you like and copy the code from "VertexColors.shader" into it.
-3. Copy the LICENSE file from this repository's root directoy into your project and rename it "PolyOBJImporter-LICENSE"
+3. The license for each file is included in the file's source code.
 
 ## Usage
 1. Download a blocks model .obj from Google Poly.
